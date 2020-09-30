@@ -9,8 +9,10 @@ a = int(input("Введите результаты пробежки первог
 b = int(input("Введите желаемый результат в км "))
 result_days = 1
 result_km = a
+print(f'На {result_days} день пройдено {result_km:>3}км')
 while result_km < b:
-        a = a + 0.1 * a
+        a = a + (0.1 * a)
         result_days += 1
         result_km = result_km + a
+        print(f'На {result_days} день пройдено {result_km:.2f}км')
 print(f"Вы достигнете требуемых показателей на %.d день" % result_days)
